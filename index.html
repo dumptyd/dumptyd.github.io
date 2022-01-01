@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+  <title>dumptyd's portfolio</title>
+  <meta name="description" content="dumptyd's portfolio page - for SEO and beyond!">
+
+  <link href="styles/main.dist.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"
+    onload="this.onload=null; this.rel='stylesheet';">
+</head>
+<body>
+  <header class="main-header">
+    Portfolio <small class="text-xl">&mdash; for SEO and beyond</small>
+  </header>
+
+  <main class="main-content">
+    <div class="content-sections">
+      <div class="content-sections__projects">
+        <h1 class="section-heading">Projects</h1>
+
+        <ul class="project__list">
+
+          <li class="project__list-item">
+            <h2 class="project__heading">tailwind-animatecss</h2>
+            <p class="project__description-short">animate.css as a plugin for Tailwind v3</p>
+            <p class="project__description-long">
+              <dfn>tailwind-animatecss</dfn> parses and transforms the classes exposed by the installed version
+              of animate.css by walking the AST and registers them with Tailwind so the utilities can be used with
+              purging and IntelliSense support.
+            </p>
+            <div class="project__links">
+              <a class="project__link-demo" target="_blank" href="https://dumptyd.github.io/tailwind-animatecss/" title="Demo for tailwind-animatecss">Demo &rarr;</a>
+              <a class="project__link-github" target="_blank" href="https://github.com/dumptyd/tailwind-animatecss" title="Source code for tailwind-animatecss">Source &rarr;</a>
+              <a class="project__link-npm" target="_blank" href="https://www.npmjs.com/package/tailwind-animatecss" title="NPM package for tailwind-animatecss">NPM &rarr;</a>
+            </div>
+          </li>
+
+
+          <li class="project__list-item">
+            <h2 class="project__heading">vue-css-donut-chart</h2>
+            <p class="project__description-short">Vue library for creating CSS donut charts</p>
+            <p class="project__description-long">
+              <dfn>vue-css-donut-chart</dfn> exposes a Vue component for drawing donut charts with support
+              for injecting arbitrary markup in the middle of the donut.
+              <br><br>
+              No tree-shaking support aside, displaying content in the middle proved to be a surprisingly challenging
+              task with Chart.js at the time, which is what prompted me to create the library.
+              <br><br>
+              It was also a nice challenge to render the whole thing using just CSS. Though, if I had to implement it now,
+              I'd likely go with a SVG and d3.js based solution.
+            </p>
+            <div class="project__links">
+              <a class="project__link-demo" target="_blank" href="https://dumptyd.github.io/vue-css-donut-chart/" title="Demo for vue-css-donut-chart">Demo &rarr;</a>
+              <a class="project__link-github" target="_blank" href="https://github.com/dumptyd/vue-css-donut-chart" title="Source code for vue-css-donut-chart">Source &rarr;</a>
+              <a class="project__link-npm" target="_blank" href="https://www.npmjs.com/package/vue-css-donut-chart" title="NPM package for vue-css-donut-chart">NPM &rarr;</a>
+            </div>
+          </li>
+
+
+          <li class="project__list-item">
+            <h2 class="project__heading">treeflex</h2>
+            <p class="project__description-short">CSS library for drawing hierarchy trees with HTML lists</p>
+            <p class="project__description-long">
+              <dfn>treeflex</dfn> exposes a set of classes to render HTML lists in a hierarchical tree view. Flexbox is used
+              heavily to achieve the end result, hence the name.
+              <br><br>
+              This doesn't have an underlying problem statement to accompany it with, it just seemed like a fun thing to implement.
+            </p>
+            <div class="project__links">
+              <a class="project__link-demo" target="_blank" href="https://dumptyd.github.io/treeflex/" title="Demo for treeflex">Demo &rarr;</a>
+              <a class="project__link-github" target="_blank" href="https://github.com/dumptyd/treeflex" title="Source code for treeflex">Source &rarr;</a>
+              <a class="project__link-npm" target="_blank" href="https://www.npmjs.com/package/treeflex" title="NPM package for treeflex">NPM &rarr;</a>
+            </div>
+          </li>
+
+
+          <li class="project__list-item">
+            <h2 class="project__heading">content-theme-blog-minimal</h2>
+            <p class="project__description-short">A standalone blog theme based on Nuxt's <code>content</code> module</p>
+            <p class="project__description-long">
+              <dfn>content-theme-blog-minimal</dfn> is a custom blog theme built on top of
+              <a href="https://content.nuxtjs.org/" target="_blank" class="underline"><code>@nuxt/content</code></a>
+              with markdown, categories, tags, analytics and dark theme support, among other things.
+              <br><br>
+              The theme was created because customizing <abbr title="Static site generator(s)">SSG</abbr>-specific themes tends to
+              require a lot of trial and error and it's a painful process in general because SSGs tend to only support customization
+              through shadowing.
+              <br><br>
+              The project aims to solve those problems by exposing a high level config with sane defaults and direct access to code.
+            </p>
+            <div class="project__links">
+              <a class="project__link-demo" target="_blank" href="https://dumptyd.github.io/content-theme-blog-minimal/" title="Demo for content-theme-blog-minimal">Demo &rarr;</a>
+              <a class="project__link-github" target="_blank" href="https://github.com/dumptyd/content-theme-blog-minimal" title="Source code for content-theme-blog-minimal">Source &rarr;</a>
+            </div>
+          </li>
+
+          <hr>
+
+          <li class="project__list-item project__list-item--more">
+            <a class="underline underline-offset-4" href="https://github.com/dumptyd/">
+              See more projects on my GitHub &rarr;
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content-sections__about">
+        <div class="about-card">
+          <h1 class="section-heading">About me</h1>
+          <p class="mt-8">
+            I'm a frontend developer and I'm mainly working with Vue these days.
+            <br><br>
+            I like to create open-source libraries whenever I get an idea that is reasonably unique and interesting, but those are few and far between.
+            I also like tinkering with CSS and I'd like to delve deeper into the metaprogramming realm in the future.
+            <br><br>
+            Check out my GitHub or reach out to me via email if you want to say hi!
+          </p>
+          <div class="about__links">
+            <a href="https://github.com/dumptyd/">GitHub</a>
+            <a href="mailto:dumptyd2.0@gmail.com">Email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
