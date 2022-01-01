@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio page",
+  "main": "pages/index.html",
+  "homepage": "https://dumptyd.github.io/",
+  "repository": "https://github.com/dumptyd/dumptyd.github.io/",
+  "author": "dumptyd",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev:tailwind": "tailwindcss -i ./pages/styles/main.css -o ./pages/styles/main.dist.css --watch",
+    "dev:serve": "browser-sync start --server pages --files \"./pages/**/*.*\"",
+    "build": "tailwindcss -i ./pages/styles/main.css -o ./pages/styles/main.dist.css --minify"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "eslint-plugin-html": "^6.2.0",
+    "tailwindcss": "^3.0.8"
+  },
+  "dependencies": {
+    "eslint": "^8.5.0"
+  }
+}
