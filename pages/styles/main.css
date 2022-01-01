@@ -45,7 +45,7 @@ dfn {
   @apply xl:shadow-xl;
 }
 
-@media (min-height: 600px) {
+@media (min-height: 650px) {
   .about-card {
     @apply xl:sticky xl:top-6;
   }
