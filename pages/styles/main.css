@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply antialiased font-serif text-base min-h-screen p-0 h-auto bg-gray-50;
+  @apply sm:p-4;
+  @apply md:p-8 sm:text-lg;
+  @apply lg:p-16;
+}
+dfn {
+  @apply font-bold not-italic;
+}
+.main-content, .main-header {
+  @apply p-4 rounded-lg min-h-full mx-auto;
+  max-width: 1620px;
+  @apply sm:p-6;
+  @apply md:p-8;
+}
+.main-header {
+  @apply font-bold text-3xl pt-12 pb-6;
+  @apply sm:py-0 sm:pb-4;
+  @apply md:text-4xl;
+}
+
+
+.content-sections {
+  @apply flex flex-col xl:flex-row xl:space-x-12;
+}
+
+.content-sections__projects {
+  @apply bg-white shadow-lg p-6 rounded-lg flex-grow order-2 mt-16;
+  @apply sm:p-8;
+  @apply xl:order-1 xl:mt-0 xl:shadow-xl;
+}
+
+.content-sections__about {
+  @apply order-1 shrink-0;
+  @apply xl:order-2 xl:max-w-md;
+}
+
+.about-card {
+  @apply bg-white shadow-lg p-4 rounded-lg;
+  @apply sm:p-8;
+  @apply xl:shadow-xl;
+}
+
+@media (min-height: 600px) {
+  .about-card {
+    @apply xl:sticky xl:top-6;
+  }
+}
+
+.section-heading {
+  @apply font-bold text-3xl text-sky-600 pb-3 border-b-2 border-current;
+  @apply md:text-4xl;
+}
+
+.project__list {
+  @apply mt-12;
+}
+.project__list-item {
+  @apply mb-12;
+}
+
+.project__list-item--more {
+  @apply text-right mt-8 mb-4;
+}
+.project__heading {
+  @apply text-2xl text-gray-900 font-bold;
+  @apply md:text-3xl;
+}
+.project__description-short {
+  @apply text-lg font-bold mt-3;
+  @apply sm:text-xl;
+}
+.project__description-long {
+  @apply mt-3 leading-relaxed;
+  @apply sm:text-lg;
+}
+
+.project__links, .about__links {
+  @apply justify-end mt-3 flex;
+}
+
+.about__links {
+  @apply mt-8 justify-center;
+}
+
+.project__links a,
+.about__links a {
+  @apply block px-4 border-r-2 border-gray-300 underline-offset-4 cursor-pointer;
+  @apply font-bold hover:underline;
+}
+.project__links a:first-child,
+.about__links a:first-child {
+  @apply pl-0;
+}
+.project__links a:last-child,
+.about__links a:last-child {
+  @apply pr-0 border-r-0;
+}
